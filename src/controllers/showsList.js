@@ -7,7 +7,7 @@ const showsList = (req, res) => {
     const hasEpisodesWithDRM = filterTvShows(payload);
     const response = mapTvShows(hasEpisodesWithDRM);
 
-    res.status(200).send(response);
+    res.status(200).send({ response });
   } catch (err) {
     return res
       .status(400)

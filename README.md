@@ -4,6 +4,7 @@
 
 A small JSON based web service.
 Receives a payload of shows and returns only the shows with DRM enabled and having at least one episode.
+Link to deployed app: https://powerful-sands-52351.herokuapp.com/shows
 
 # Table of Contents
 
