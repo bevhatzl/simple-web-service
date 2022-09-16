@@ -22,4 +22,4 @@ const showsList = (req, res) => {
   }
 };
 
-export default showsList;
+export { showsList };
