@@ -23,5 +23,8 @@
     "testPathIgnorePatterns": [
       "data"
     ]
+  },
+  "engines": {
+    "node": "14.18.1"
   }
 }
