@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/.bin/jest --coverage",
-    "start": "node server.js",
+    "start": "node src/server.js",
     "dev": "nodemon src/server.js"
   },
   "author": "Beverley Hatzl",
@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "jest": "^29.0.3",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "supertest": "^6.2.4"
   }
 }
