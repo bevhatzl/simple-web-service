@@ -1,19 +1,12 @@
+import { filterTvShows, mapTvShows } from '../services/showsService.js';
+
 const showsList = (req, res) => {
   try {
     const { payload } = req.body;
 
-    const hasEpisodesWithDRM = payload.filter(
-      (show) => show.drm && show.episodeCount && show.episodeCount > 0
-    );
+    const hasEpisodesWithDRM = filterTvShows(payload);
+    const response = mapTvShows(hasEpisodesWithDRM);
 
-    const response = hasEpisodesWithDRM.map((show) => {
-      const { image, slug, title } = show;
-      return {
-        image: image.showImage,
-        slug,
-        title,
-      };
-    });
     res.status(200).send(response);
   } catch (err) {
     return res
