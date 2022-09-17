@@ -11,6 +11,6 @@ describe('shows', () => {
 
   it('should only return a list containing the required properties', () => {
     const showsResponse = mapTvShows(expectedFilteredShows);
-    expect(showsResponse).toStrictEqual(sampleResponse);
+    expect(showsResponse).toStrictEqual(sampleResponse.response);
   });
 });
